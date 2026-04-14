@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions - Quora Lite</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7fa;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: #343a40;
+            color: white;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        /* Content */
+        .terms {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .terms h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .terms h2 {
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .terms p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background: #343a40;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <%- include('includes/nav.ejs') %>
+
+    <!-- Terms Content -->
+    <div class="terms">
+        <h1>Terms & Conditions</h1>
+
+        <p>
+            Welcome to Quora Lite. By using this website, you agree to the following terms and conditions.
+        </p>
+
+        <h2>Use of the Website</h2>
+        <p>
+            You agree to use this website only for lawful purposes and not to post harmful, offensive,
+            or inappropriate content.
+        </p>
+
+        <h2>User Content</h2>
+        <p>
+            You are responsible for any content you post. We reserve the right to remove content that
+            violates our guidelines.
+        </p>
+
+        <h2>Account Responsibility</h2>
+        <p>
+            If accounts are introduced, you are responsible for maintaining the confidentiality of your account.
+        </p>
+
+        <h2>Limitation of Liability</h2>
+        <p>
+            Quora Lite is not responsible for any damages resulting from the use of this website.
+        </p>
+
+        <h2>Changes to Terms</h2>
+        <p>
+            We may update these terms at any time. Continued use of the site means you accept the updated terms.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+            For any questions regarding these terms, please contact us via the contact page.
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <%- include('includes/footer.ejs') %>
+
+</body>
+</html>

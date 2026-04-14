@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All posts</title>
+    <link rel="stylesheet" href="/style.css">
+    
+</head>
+<body>
+    <%- include('includes/nav.ejs') %>
+    <h1><center><p>All posts are :- </p></center></h1>
+    <div class="newpost">
+        <a href="http://localhost:8080/posts/new">Create a new post</a>
+    
+    </div>
+    
+    <% for(post of posts) {%>
+        <div>
+            <p>The username is :@<%=post.username%></p>
+            
+            <img src="<%=post.img%>" alt="this is the image">
+        <h4><p>Caption is :<%=post.content%></p></h4>
+
+        <a href="http://localhost:8080/posts/<%=post.id%>">See in detail </a>
+        <a href="http://localhost:8080/posts/<%=post.id%>/edit">Edit the post </a>
+        <br>
+        <br>
+        <form method="post" action="/posts/<%=post.id%>?_method=DELETE">
+            <button>Delete Post</button>
+        </form>
+        </div>
+        
+    <%}%>
+
+    
+    <%- include('includes/footer.ejs') %>
+</body>
+</html>

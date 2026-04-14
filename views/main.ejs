@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Official Website</title>
+    <link rel="stylesheet" href="/stylemain.css">
+</head>
+<body>
+    <%- include('includes/nav.ejs') %>
+    
+    <div class="hero">
+        <h1>Welcome to Quora Lite</h1>
+        <p>Share your thoughts, ideas, and moments with the world.</p>
+        <a href="/posts" class="btn">Explore Posts</a>
+    </div>
+
+    <!-- Features -->
+    <div class="features">
+        <div class="feature-card">
+            <h3>Create Posts</h3>
+            <p>Share your ideas and experiences easily.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>View Posts</h3>
+            <p>Explore what others are sharing.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Edit & Delete</h3>
+            <p>Manage your content anytime.</p>
+        </div>
+    </div>
+
+    
+    <%- include('includes/footer.ejs') %>
+</body>
+</html>

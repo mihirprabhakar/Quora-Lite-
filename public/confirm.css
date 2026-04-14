@@ -1,0 +1,41 @@
+/* 🔥 Success Page Container */
+.success-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+/* Card */
+.success-card {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 400px;
+}
+
+/* Success Text */
+.success-card p {
+    font-size: 18px;
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* Button */
+.success-card button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.success-card button:hover {
+    background-color: #0056b3;
+}

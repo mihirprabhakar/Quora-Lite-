@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Quora Lite</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7fa;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: #343a40;
+            color: white;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        /* Content */
+        .privacy {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .privacy h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .privacy h2 {
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .privacy p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background: #343a40;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <%- include('includes/nav.ejs') %>
+    <div class="privacy">
+        <h1>Privacy Policy</h1>
+
+        <p>
+            At Quora Lite, we value your privacy. This page explains how we collect, use,
+            and protect your information when you use our website.
+        </p>
+
+        <h2>Information We Collect</h2>
+        <p>
+            We may collect basic information such as your name, email, and any content
+            you choose to share (like posts or messages).
+        </p>
+
+        <h2>How We Use Your Information</h2>
+        <p>
+            Your information is used to improve the platform, allow you to create posts,
+            and enhance your overall experience.
+        </p>
+
+        <h2>Data Security</h2>
+        <p>
+            We take reasonable steps to protect your data, but please note that no system
+            is completely secure.
+        </p>
+
+        <h2>Third-Party Services</h2>
+        <p>
+            We do not sell your personal data. However, third-party services may be used
+            for analytics or hosting.
+        </p>
+
+        <h2>Changes to This Policy</h2>
+        <p>
+            We may update this policy from time to time. Continued use of the site means
+            you accept these changes.
+        </p>
+
+        <h2>Contact Us</h2>
+        <p>
+            If you have any questions, feel free to contact us through our contact page.
+        </p>
+    </div>
+
+    <%- include('includes/footer.ejs') %>
+
+</body>
+</html>
