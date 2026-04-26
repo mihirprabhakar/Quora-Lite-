@@ -155,7 +155,7 @@ app.post('/login', (req, res) => {
     const { username, password } = req.body;
     console.log(username, password);
 
-    res.send("Login successful (not secure yet 😅)");
+    res.redirect("/posts");
 });
 
 app.get('/signup', (req, res) => {
@@ -166,7 +166,7 @@ app.post('/signup', (req, res) => {
     const { username, email, password } = req.body;
     console.log("New User:", username, email, password);
 
-    res.send("Signup successful (store in DB next 🔥)");
+    res.redirect("/posts");
 });
 
 app.listen(port, () => {
